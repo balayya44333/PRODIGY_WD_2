@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #292f36; /* Dark background color */
+    margin: 0;
+}
+
+.stopwatch {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ff9f1c; /* Vibrant yellow color */
+}
+
+.buttons button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttons button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Added transform transition */
+}
+
+.buttons button:hover {
+    filter: brightness(1.1); /* Slightly increase brightness on hover */
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+#start:hover {
+    background-color: #2ecc71; /* Lighten green color on hover */
+}
+
+#pause:hover {
+    background-color: #e74c3c; /* Lighten red color on hover */
+}
+
+#reset:hover {
+    background-color: #3498db; /* Lighten blue color on hover */
+}
+
+#lap:hover {
+    background-color: #27ae60; /* Lighten dark green color on hover */
+}
+
+
+
+#start {
+    background-color: #2ecc71; /* Green color */
+    color: white;
+}
+
+#pause {
+    background-color: #e74c3c; /* Red color */
+    color: white;
+}
+
+#reset {
+    background-color: #3498db; /* Blue color */
+    color: white;
+}
+
+#lap {
+    background-color: #27ae60; /* Dark green color */
+    color: white;
+}
+
+#laps {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#laps h2 {
+    margin: 0 0 10px 0;
+    color: #ff9f1c; /* Vibrant yellow color */
+}
+
+#lapTimes {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lapTimes li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    color: #292f36; /* Dark text color */
+}
